@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/css.css">
+    <title>Investment</title>
+</head>
+<body>
+    <div class="bloc">
+        <h1>Investment Caculator</h1>
+        <p>"Enter the amount in DOLLARS you want to invest"</p>
+        <form action="#" onsubmit="invest()">
+            <input type="text" id="intial_investment" value="0">
+            <p>What is your Intrest Rate: </p>
+                <select name="format" id="intrest_rate" value="0">
+                    <option value="2%">2%</option>
+                    <option value="3%">3%</option>
+                    <option value="4%">4%</option>
+                    <option value="5%">5%</option>
+                    <option value="6%">6%</option>
+                    <option value="7%">7%</option>
+                </select> 
+                
+            <p>Please enter an additional Investment.</p>
+            <input type="text" id="time_invested" value="0">
+            
+            <p>How long would you like your Investment term to be: </p>
+            
+            <input type="radio" id="years" name="term" value="1">
+            <label for ="years"> In Years</label>
+            
+            <input type="radio" id="years" name="term" value="1">
+            <label for ="months">In Months</label>
+
+            <p>How much per term are you adding?</p>
+            <input type ="text" id ="additional" value ="0">
+
+            <input type ="submit" value="submit">
+
+            <p>You have earned a total of: $<span id="total_intrest"></span> and have total of: $<span id="account_total"></span> in your bank account as of now</p>
+        </form>
+    </div>
+    <script src="java/investment.js"></script>
+</body>
+</html>
